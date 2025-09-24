@@ -64,7 +64,6 @@ Array in Java
 */
 
 class Calc{
-    int num = 7;
     public int add(int a, int b) {
         return a+b;
     }
