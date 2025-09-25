@@ -12,7 +12,7 @@
 
         Hence, abstract class are only for inheritance and the class ingeriting the abstract class is called concrete class.
 
-
+        To create obj of abstract class with anonymous class
 */
 
 abstract class Car {
