@@ -16,6 +16,28 @@
 
     note interface can extends other interface as well
 
+    Types of interfaces
+
+        1. Normal interface
+            Have two or more methods
+
+        2. functional/SAM interface
+            Have only one method
+
+        3. Marker interface
+            Mave no method
+            Used for granting permission to any class.
+
+            A marker interface in Java is an interface that contains no methods or constants. 
+            Its sole purpose is to "mark" or "tag" a class, providing metadata about it at runtime. 
+            This allows the Java Virtual Machine (JVM), libraries, or frameworks to recognize and 
+            treat objects of that class in a specific way, even though no explicit methods are enforced by 
+            the interface itself. 
+
+
+            eg., Serializable (from java.io): Indicates that 
+            objects of a class can be converted into a byte stream (serialized) and later reconstructed (deserialized).
+
 
 */
 
