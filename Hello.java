@@ -26,6 +26,7 @@ Note: Java is strongly tight lang (so one type can't assign to other types)
                 explicity write f in end of variable value, like: float num = 5.6f;]
         c. character (char (2 bytes)) [like: char ch = 'a';]
         d. boolean (alway true or false, 0 & 1 not work for java) [bool b = true;]
+        e. compilation error occurs, if you don't initialise the variables.
 
         Literals:
             bits-> int x = 0b101; // x = 5
