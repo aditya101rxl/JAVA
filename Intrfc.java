@@ -23,6 +23,11 @@
 
         2. functional/SAM interface
             Have only one method
+            it's good to mention @FunctionalInterface anotation for functional interface
+            so by mistake u can't added more methods.
+
+            lambda expression is very useful for this functional interface.
+            lambda expression only work with functional interface.
 
         3. Marker interface
             Mave no method
@@ -50,8 +55,14 @@ interface Y extends X {
     void run();
 }
 
+@FunctionalInterface
 interface Z {
     void move();
+}
+
+@FunctionalInterface
+interface Add {
+    int add(int x, int y);
 }
 
 class A implements Y, Z {
@@ -78,5 +89,13 @@ public class Intrfc {
 
         Y obj2 = new A();
         obj2.run();
+
+        //lambda expression
+        Z obj3 = () -> System.out.println("Moving...");
+        obj3.move();
+
+        Add ad = (i, j) -> i+j;
+        System.out.println(ad.add(2, 3));
+
     }
 }
